@@ -1,0 +1,304 @@
+@font-face { 
+    font-family: 'aniron';
+    src: url('../fonts/anirm___.ttf') format('truetype');
+         
+}
+
+@font-face { 
+    font-family: 'party';
+    src: url('../fonts/partybusiness.ttf') format('truetype');
+         
+}
+
+
+@font-face { 
+    font-family: 'twengar';
+    src: url('../fonts/tngan.ttf') format('truetype');
+         
+}
+
+/* Valeur minimale sur le body */
+
+body
+{
+min-width:320px;
+width:auto;
+}
+
+/* Travail sur la nav bar logo + menu */
+
+.navbar
+{
+background-color:#F7550A;
+margin:0
+}
+
+
+.navbar-nav
+{
+font-size:1.5em;
+position:relative;
+font-family:aniron;
+color:white;
+}
+
+
+.nav.main_menu > li > a
+{
+color:white;
+}
+
+.nav.main_menu > li > a:focus, .nav.main_menu > li > a:hover
+{
+background-color:transparent;
+text-decoration:underline;
+color:white;
+}
+
+.navbar-text
+{
+margin-left:0;
+margin-right:0
+}
+
+
+/* Travail sur le carousel */ 
+
+.carousel-caption
+{
+top:30%;
+bottom:auto;
+}
+
+
+h1
+{
+font-size:5em;
+font-weight:bold;
+font-family:party;
+}
+
+.carousel p
+{
+font-size:3.5em;
+font-family:party;
+}
+
+
+/* Travail sur le Pills */ 
+
+
+
+.balises_twengar
+{
+color:#F7550A;
+font-family:twengar
+}
+
+
+.balises_pills
+{
+color:#F7550A;
+font-family:twengar;
+font-size:1.1em;
+visibility:hidden;
+}
+
+.nav.nav_onglet > li > a:hover .balises_pills
+{
+	visibility:visible;
+}
+
+
+.nav.nav_onglet > li > a
+{
+font-size:1.5em;
+font-family:aniron;
+color:#635A5A;
+}
+
+
+
+.nav.nav_onglet > li > a:hover
+{
+color:#F7550A;
+background-color:transparent;
+text-decoration:underline;
+}
+
+.liens_pills
+{
+width:80%;
+margin:auto;
+}
+
+
+h2 
+{
+margin-top:5%;
+font-size:2em;
+text-align:center;
+font-weight:bold;
+font-family:aniron;
+}
+
+.sous_titre_h2
+{
+font-size:0.8em;
+}
+
+/* Travail sur les portraits */ 
+
+.section_pills, .section_portrait
+{
+background-image:url(../ress/images/_bg_light.png)
+}
+
+.thumbnail, .portrait
+{
+background-color:black;
+}
+
+
+.name
+{
+font-size:400%;
+position:absolute;
+top:35%;
+width:80%;
+left:10%;
+right:70%;
+font-family:party;
+text-align:center;
+color:white;
+}
+
+.name_gimli
+{
+font-size:400%;
+position:absolute;
+top:35%;
+width:80%;
+left:10%;
+right:70%;
+font-family:party;
+text-align:center;
+color:white;
+text-decoration:line-through;
+text-decoration-color:#F7550A;
+}
+
+
+.reward, .dead
+{
+font-size:300%;
+font-family:party;
+position:absolute;
+top:5%;
+left:10%;
+right:10%;
+padding-top:2%;
+padding-bottom:2%;
+text-align:center;
+width:80%;
+}
+
+
+.reward
+{
+
+color:black;
+border-radius:20px;
+background-color:rgba(245,236,236,0.7);
+}
+
+
+.dead
+{
+color:#F7550A;
+}
+
+.photo_portrait
+{
+width:100%;
+height:auto;
+opacity:0.4;
+}
+
+.reward span
+{
+color:#F7550A;
+}
+
+
+.thumbnail:hover .photo_portrait
+{
+opacity:1
+}
+.thumbnail:hover .reward, .thumbnail:hover .dead
+{
+display:none;
+}
+
+.thumbnail:hover .name, .thumbnail:hover .name_gimli
+{
+font-size:300%;
+top:60%
+}
+
+.legend_portrait
+{
+text-align:left;
+background-color:black;
+color:white;
+font-family:party;
+font-size:350%;
+height:4em;
+}
+
+@media (max-width:992px)
+{
+	.legend_portrait, .reward
+	{
+	font-size:200%;
+	}
+
+}
+
+
+@media (max-width:992px)
+{
+	.name, .name_gimli
+	{
+	font-size:325%;
+	}
+
+}
+
+@media (max-width:768px)
+{
+	h1, h2
+	{
+	font-size:1em;
+	}
+}
+
+@media (max-width:768px)
+{
+	.carousel p
+	{
+	font-size:0.8em;
+	}
+}
+
+
+
+@media (max-width:768px)
+{
+	.navbar-text
+	{
+	visibility:hidden;
+	margin:0;
+	height:0px;
+	}
+}
