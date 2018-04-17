@@ -1,20 +1,20 @@
-@font-face { 
+@font-face {
     font-family: 'aniron';
     src: url('../fonts/anirm___.ttf') format('truetype');
-         
+
 }
 
-@font-face { 
+@font-face {
     font-family: 'party';
     src: url('../fonts/partybusiness.ttf') format('truetype');
-         
+
 }
 
 
-@font-face { 
+@font-face {
     font-family: 'twengar';
     src: url('../fonts/tngan.ttf') format('truetype');
-         
+
 }
 
 /* Valeur minimale sur le body */
@@ -62,7 +62,7 @@ margin-right:0
 }
 
 
-/* Travail sur le carousel */ 
+/* Travail sur le carousel */
 
 .carousel-caption
 {
@@ -85,7 +85,7 @@ font-family:party;
 }
 
 
-/* Travail sur le Pills */ 
+/* Travail sur le Pills */
 
 
 
@@ -133,7 +133,7 @@ margin:auto;
 }
 
 
-h2 
+h2
 {
 margin-top:5%;
 font-size:2em;
@@ -147,7 +147,7 @@ font-family:aniron;
 font-size:0.8em;
 }
 
-/* Travail sur les portraits */ 
+/* Travail sur les portraits */
 
 .section_pills, .section_portrait
 {
@@ -301,4 +301,191 @@ height:4em;
 	margin:0;
 	height:0px;
 	}
+}
+
+
+
+/* debut de la quete préprocesseur */
+
+
+
+.quete_scss{
+    background-image: url('../ress/images/bglight.png');
+}
+
+.ligne_anneaux{
+    margin-top : 10%;
+}
+
+.first_ligne{
+    display:flex;
+    /*height:200px;*/
+    width:90%;
+    margin-left: 25%;
+}
+
+.third_ligne{
+    display:flex;
+    /*height:200px;*/
+    width:50%;
+    margin-left: 35%;
+}
+
+.fourth_ligne{
+    margin-top:2%;
+}
+
+
+.txt_anneau1, .txt_anneau2, .txt_anneau3{
+    margin-left:5%;
+    margin-right: 5%;
+    font-size: 3em;
+    font-family: aniron, sans-serif;
+}
+
+.txt_anneau2{
+    margin-top: 5%;
+}
+
+.txt_anneau3{
+    margin-top: -5%;
+}
+
+
+
+
+/* Utilisation du SCSS qui est annoté. Transfo en CSS juste apres
+
+@mixin cercle($width, $color, $larg) {
+  width: $width;
+  height: $width;
+  border:$larg $color solid;
+  -webkit-border-radius: $width/2;
+     -moz-border-radius: $width/2;
+          border-radius: $width/2;
+}
+
+.cercle1 {
+  @include cercle(80px, #FCB12F, 5px);
+}
+
+.cercle2 {
+  @include cercle(200px, #E5FC2F, 7px);
+}
+
+
+
+
+$width : 20px;
+$color : gray;
+$larg : 3px;
+$decalage : -5px;
+
+
+
+
+@for $i from 1 through 6 {
+  .cercle_imbrique:nth-child(#{$i}) {
+      border:($larg) ($color) solid;
+      width:($width);
+      height:($width);
+      border-radius:($width/2);
+      margin-left : ($decalage);
+      position:relative;
+      top:50%;
+      transform:translateY(-50%);
+
+      $width : $width + 20;
+      $larg : $larg + 1;
+      $decalage : $decalage - 5;
+  }
+}
+
+
+*/
+
+.cercle1 {
+  width: 80px;
+  height: 80px;
+  border: 5px #FCB12F solid;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+}
+
+
+.cercle2 {
+  width: 200px;
+  height: 200px;
+  border: 7px #E5FC2F solid;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
+
+
+.cercle_imbrique:nth-child(1) {
+  border: 3px gray solid;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin-left: -5px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cercle_imbrique:nth-child(2) {
+  border: 4px gray solid;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-left: -10px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cercle_imbrique:nth-child(3) {
+  border: 5px gray solid;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  margin-left: -15px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cercle_imbrique:nth-child(4) {
+  border: 6px gray solid;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  margin-left: -20px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cercle_imbrique:nth-child(5) {
+  border: 7px gray solid;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin-left: -25px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cercle_imbrique:nth-child(6) {
+  border: 8px gray solid;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  margin-left: -30px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
